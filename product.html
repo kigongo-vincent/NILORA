@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NILORA</title>
+
+    <!-- generic  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/product.css" />
+    <script src="./assets/js/index.js" defer></script>
+    <!-- end generic  -->
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="bg-primary">
+      <!-- links + shop  -->
+      <ul>
+        <li>
+          <a href="">Shop <i class="fa-solid fa-angle-down"></i></a>
+        </li>
+        <li><a href="/">Body Butters</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+
+      <!-- logo  -->
+      <a href="/" class="logo">NILORA</a>
+
+      <!-- icon buttons  -->
+      <ul>
+        <li>
+          <a href=""><i class="fa fa-search"></i></a>
+          <a href=""><i class="fa-regular fa-user"></i></a>
+          <a href="" class="dot-parent"
+            ><i class="fa-solid fa-briefcase"></i>
+            <div class="dot"></div
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- hero section   -->
+    <!-- <header>
+      <div class="image-gallery">
+        <div><img src="/assets/images/p1-1.png" alt="" /></div>
+        <div><img src="/assets/images/p1-2.png" alt="" /></div>
+        <div><img src="/assets/images/p1-3.png" alt="" /></div>
+      </div>
+
+      <div class="product-metrics">
+        <h2>Nilora 100g Glass Jar</h2>
+        <p> Perfect for your purse, diaper bag, or daily skincare ritual.</p>
+        <p>This product exists in 3 sizes</p>
+        <div class="sizes">
+          <div class="size">
+            <div>
+              <h3>50</h3>
+              <small>ml</small>
+            </div>
+            <p>1.7FL OZ</p>
+          </div>
+          <div class="size">
+            <div>
+              <h3>50</h3>
+              <small>ml</small>
+            </div>
+            <p>1.7FL OZ</p>
+          </div>
+          <div class="size">
+            <div>
+              <h3>50</h3>
+              <small>ml</small>
+            </div>
+            <p>1.7FL OZ</p>
+          </div>
+        </div>
+        <div class="purchase">
+          <u>UGX 56,000</u>
+          <button>Place order</button>
+        </div>
+      </div>
+
+      <div class="product-description">lorem30</div>
+    </header> -->
+    <header>
+      <div class="image-1 img">
+        <img src="/assets/images/p1-1.png" alt="" />
+      </div>
+      <div class="image-2 img">
+        <img src="/assets/images/p1-2.png" alt="" />
+      </div>
+      <div class="image-3 img">
+        <img src="/assets/images/p1-3.png" alt="" />
+      </div>
+      <div class=" product-metrics">
+          <h2>Nilora 100g Glass Jar</h2>
+          <p> Perfect for your purse, diaper bag, or daily skincare ritual.</p>
+          <p>This product exists in 3 sizes</p>
+          <div class="sizes">
+            <p>Loading...</p>
+          </div>
+          <div class="purchase">
+            <u id="product-price">UGX 0</u>
+            <button>Place order</button>
+          </div>
+        </div>
+      </div>
+      <div class="description">
+
+        <div class="tabs-container">
+            <div class="tabs">
+                <div class="tab active" data-tab="description">Description</div>
+                <div class="tab" data-tab="how-to-use">How to use</div>
+                <div class="tab" data-tab="ingredients">Ingredients</div>
+                <div class="tab" data-tab="shipping">Shipping</div>
+                <div class="tab" data-tab="reviews">Reviews</div>
+                <div class="tab" data-tab="warranty">Warranty</div>
+            </div>
+            <div class="tabs-gradient"></div>
+           
+        </div>
+        
+        <div class="tab-content">
+            <div class="tab-panel active" id="description">
+                <h3>Product Description</h3>
+                <p>Nilorg brings you the softness of nature in its purest form — wild, unrefined Nilotica Shea butter, harvested by women in Northern Uganda and cold-pressed to preserve its rare nutrients.</p>
+                <p>Melt it into your hands. Share it with your child. Feel the difference of butter that heals, hydrates, and soothes — from face to belly to baby skin.</p>
+            </div>
+            
+            <div class="tab-panel" id="how-to-use">
+                <h3>How to Use</h3>
+                <p><strong>For Adults:</strong></p>
+                <p>Take a small amount and warm between your palms until it melts. Apply to clean skin, massaging gently in circular motions. Perfect for dry areas like elbows, knees, and heels.</p>
+                
+                <p><strong>For Children & Babies:</strong></p>
+                <p>Use a pea-sized amount for delicate baby skin. The natural, unrefined formula is gentle enough for daily use on sensitive areas.</p>
+                
+                <p><strong>Best Results:</strong></p>
+                <p>Apply to slightly damp skin for better absorption. Use morning and evening for optimal hydration.</p>
+            </div>
+            
+            <div class="tab-panel" id="ingredients">
+                <h3>Ingredients</h3>
+                <p><strong>100% Pure Ingredients:</strong></p>
+                <ul class="ingredient-list">
+                    <li><strong>Nilotica Shea Butter (Vitellaria nilotica)</strong> - Wild-harvested from Northern Uganda</li>
+                    <li><strong>Natural Vitamins A, E, F</strong> - For skin repair and protection</li>
+                    <li><strong>Essential Fatty Acids</strong> - Deep moisturizing properties</li>
+                    <li><strong>Cinnamic Acid</strong> - Natural sun protection</li>
+                </ul>
+                <p style="margin-top: 16px;"><em>No additives, no preservatives, no artificial fragrances. Just pure, cold-pressed Nilotica Shea butter in its natural state.</em></p>
+            </div>
+            
+            <div class="tab-panel" id="shipping">
+                <h3>Shipping Information</h3>
+                
+                <div class="shipping-info">
+                    <h4>📦 Standard Shipping</h4>
+                    <p><strong>Delivery Time:</strong> 3-5 business days</p>
+                    <p><strong>Cost:</strong> Free on orders over $50</p>
+                </div>
+                
+                <div class="shipping-info">
+                    <h4>⚡ Express Shipping</h4>
+                    <p><strong>Delivery Time:</strong> 1-2 business days</p>
+                    <p><strong>Cost:</strong> $15.99</p>
+                </div>
+                
+                <div class="shipping-info">
+                    <h4>🌍 International Shipping</h4>
+                    <p><strong>Delivery Time:</strong> 7-14 business days</p>
+                    <p><strong>Cost:</strong> Calculated at checkout</p>
+                </div>
+                
+                <p><strong>Note:</strong> All orders are carefully packaged to preserve the natural properties of our Nilotica Shea butter during transit.</p>
+            </div>
+            
+            <div class="tab-panel" id="reviews">
+                <h3>Customer Reviews</h3>
+                <p><strong>⭐⭐⭐⭐⭐ 4.8/5 stars</strong> (Based on 127 reviews)</p>
+                
+                <div class="shipping-info">
+                    <h4>Sarah M. ⭐⭐⭐⭐⭐</h4>
+                    <p>"Absolutely love this shea butter! It's so pure and natural. My baby's skin has never been softer."</p>
+                </div>
+                
+                <div class="shipping-info">
+                    <h4>James K. ⭐⭐⭐⭐⭐</h4>
+                    <p>"Been using this for my dry hands and it works wonders. A little goes a long way!"</p>
+                </div>
+                
+                <div class="shipping-info">
+                    <h4>Maria L. ⭐⭐⭐⭐</h4>
+                    <p>"Great product, though the texture takes some getting used to. Results are amazing though."</p>
+                </div>
+            </div>
+            
+            <div class="tab-panel" id="warranty">
+                <h3>Warranty & Returns</h3>
+                
+                <div class="shipping-info">
+                    <h4>🛡️ Quality Guarantee</h4>
+                    <p>We stand behind our 100% pure Nilotica Shea butter with a 30-day satisfaction guarantee.</p>
+                </div>
+                
+                <div class="shipping-info">
+                    <h4>↩️ Easy Returns</h4>
+                    <p>Not satisfied? Return within 30 days for a full refund. No questions asked.</p>
+                </div>
+                
+                <div class="shipping-info">
+                    <h4>📞 Customer Support</h4>
+                    <p>Contact us anytime at support@nilorg.com or call 1-800-NILORG</p>
+                </div>
+                
+                <p><strong>Note:</strong> Due to the natural, handcrafted nature of our product, slight variations in color and texture are normal and do not affect quality.</p>
+            </div>
+        </div>
+
+      </div>
+    </header>
+    <!-- contact us section  -->
+    <section class="contact">
+      <div>
+        <div>
+          <h3>Stay Connected</h3>
+          <p>
+            Subscribe to our ritual letter for gentle tips, offers & wellness
+            insights.
+          </p>
+        </div>
+
+        <div>
+          <div class="email-group">
+            <input type="email" name="" placeholder="Enter your email" id="" />
+            <button>
+              <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            </button>
+          </div>
+          <small
+            >By completing this form, you are signing up to receive our emails
+            and can unsubscribe at any time</small
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <div>
+          <h2>Contact Us</h2>
+          <ul>
+            <li>Email: hello@nilora.africa</li>
+            <li>Instagram: @nilora.africa</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Copyright</h2>
+          <p>&copy; 2025 Nilora | Powered by BVR Launchpad</p>
+        </div>
+        <div></div>
+      </div>
+    </footer>
+  </body>
+</html>

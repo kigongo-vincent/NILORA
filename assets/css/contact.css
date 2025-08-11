@@ -1,0 +1,67 @@
+@import url(./base.css);
+
+header {
+  background: linear-gradient(#1b182838, #1b182838),
+    url("/assets/images/bg-contact.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  color: var(--paper);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+
+header h1 {
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+header p {
+  border-radius: 5px;
+  max-width: 30vw;
+  text-align: center;
+}
+
+aside {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.198);
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+aside img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+.links div{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+ background-color: #f4f4f40d;
+ backdrop-filter: blur(6px);
+ border-radius: 10px;
+ margin-top: 2rem;
+ padding: 1rem 2rem;
+ border: 1px solid rgba(255, 255, 255, 0.298);
+}
+
+/* hero section  */

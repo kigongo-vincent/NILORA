@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  font-size: 13.5px;
+  box-sizing: border-box;
+  line-height: 1.8;
+  transition: ease-in-out 0.25s;
+}
+
+:root {
+  --pale: #f4f4f4;
+  --paper: #ffffff;
+  --primary: #674336;
+  --secondary: #312119;
+  --text-color: #0e0402;
+  --grey: rgb(196, 196, 196);
+}
+
+/* navbar  */
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95vw;
+  justify-self: center;
+  margin: auto;
+  padding: 1rem 4rem;
+  z-index: 9999;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--paper);
+  text-decoration: none;
+}
+
+.logo {
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav .dot {
+  background-color: rgb(255, 0, 106);
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+nav .dot-parent {
+  position: relative;
+}
+
+/* end navbar  */
+
+/* footer  */
+footer {
+  background-color: var(--secondary);
+  color: var(--paper);
+}
+
+footer > div {
+  max-width: 90vw;
+  margin: auto;
+  padding: 4rem 0;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+/* end footer  */
+
+/* contact  */
+.contact > div {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 90vw;
+  margin: auto;
+}
+
+.contact {
+  background-color: var(--pale);
+  padding: 5rem 0;
+}
+.contact h3 {
+  font-size: 2rem;
+}
+
+.email-group {
+  background-color: var(--paper);
+  justify-content: space-between;
+  display: flex;
+  align-items: stretch;
+  height: 50px;
+  padding: 0px 0px 0px 2rem;
+}
+
+.email-group input {
+  border: none;
+  background: transparent;
+  outline: none;
+
+  flex: 1;
+}
+
+.email-group button {
+  width: 60px;
+  height: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  border: none;
+  background-color: var(--text-color);
+  color: var(--paper);
+}
+
+.contact small {
+  font-size: 10px;
+}
+
+footer h2 {
+  font-size: 1.5rem;
+}
+/* end contact  */
+
+.bg-primary {
+  background-color: var(--primary);
+  box-shadow: 10px 10px 20px rgba(59, 34, 12, 0.219);
+  width: 100vw;
+  z-index: 9999;
+}
+
+
