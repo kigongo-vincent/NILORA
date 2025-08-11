@@ -9,7 +9,7 @@ const getCurrentPathName = () => {
 document.addEventListener("scroll", (e) => {
   const navbarEl = document.querySelector("nav");
 
-  const blockedPaths = ["product"];
+  const blockedPaths = ["product?"];
 
   if (blockedPaths.includes(getCurrentPathName())) {
     console.log("blocked");
