@@ -46,22 +46,44 @@ aside img {
   object-fit: cover;
 }
 
-.links div{
+.links div {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.links{
+.links {
   display: flex;
   align-items: center;
   gap: 4rem;
- background-color: #f4f4f40d;
- backdrop-filter: blur(6px);
- border-radius: 10px;
- margin-top: 2rem;
- padding: 1rem 2rem;
- border: 1px solid rgba(255, 255, 255, 0.298);
+  background-color: #f4f4f40d;
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.298);
+}
+
+@media (max-width: 800px) {
+  aside h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  aside p {
+    max-width: 100vw;
+    text-align: center;
+  }
+  aside img {
+    height: 20px;
+    width: 20px;
+  }
+  .links div{
+    gap: .3rem;
+  }
+  .links {
+    max-width: 90vw;
+    gap: 2rem;
+  }
 }
 
 /* hero section  */
