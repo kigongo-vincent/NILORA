@@ -147,4 +147,72 @@ footer h2 {
   z-index: 9999;
 }
 
+.menu-close {
+  display: none;
+}
 
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  nav {
+    width: 100%;
+  }
+  .menu {
+    flex-direction: column;
+    background-color: var(--primary);
+    position: fixed;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+    padding: 3rem;
+    transform: translateY(-100%);
+  }
+
+  .open {
+    transform: translateY(0%);
+  }
+
+  .menu-btn {
+    display: block;
+    color: var(--paper);
+    transform: scale(1.4);
+  }
+
+  .user-links {
+    display: none;
+  }
+
+  .logo {
+    position: relative;
+    left: 0%;
+    transform: translateX(0%);
+  }
+
+  .menu-close {
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    transform: scale(1.5);
+    color: var(--paper);
+  }
+  .contact > div {
+    flex-direction: column;
+  }
+  .email-group {
+    margin-top: 2rem;
+  }
+  footer > div {
+    flex-direction: column;
+  }
+  footer > div > div:nth-of-type(1) {
+    margin-bottom: 3rem;
+  }
+}

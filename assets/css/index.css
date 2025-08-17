@@ -1,9 +1,5 @@
 @import url(./base.css);
 
-
-
-
-
 header {
   background: linear-gradient(#1b182838, #1b182838),
     url("/assets/images/hero-image.jpg");
@@ -287,4 +283,42 @@ ul li {
 }
 /* end contact  */
 
+@media (max-width: 800px) {
+  header h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  aside {
+    display: none;
+  }
+  .about,
+  .more {
+    flex-direction: column;
+  }
 
+  .about img {
+    width: 100%;
+  }
+  .more img {
+    display: none;
+  }
+  .product {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .product .overlay {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    display: flex;
+    top: 0;
+  }
+  .product-details {
+    display: block;
+  }
+  .difference {
+    background: transparent;
+    height: max-content;
+    padding: 5rem 2rem;
+  }
+}

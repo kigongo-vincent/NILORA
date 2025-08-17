@@ -5,11 +5,18 @@ const getCurrentPathName = () => {
   return pathURI ? pathURI?.split(".")[0] : "";
 };
 
+// trigger menu modal open and close
+const menu = document.querySelector(".menu");
+
+const toggleMenuOpen = () => {
+  menu.classList.toggle("open");
+};
+
 // detect scrolling to update the navbar bg
 document.addEventListener("scroll", (e) => {
   const navbarEl = document.querySelector("nav");
 
-  const blockedPaths = ["product?"];
+  const blockedPaths = ["product"];
 
   if (blockedPaths.includes(getCurrentPathName())) {
     console.log("blocked");
