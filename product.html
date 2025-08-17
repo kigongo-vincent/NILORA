@@ -16,22 +16,29 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="bg-primary">
-      <!-- links + shop  -->
-      <ul>
+     <nav class="bg-primary">
+       <!-- links + shop  -->
+      <ul class="menu">
         <li>
           <a href="">Shop <i class="fa-solid fa-angle-down"></i></a>
         </li>
         <li><a href="/">Body Butters</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
+        <div class="menu-close" onclick="toggleMenuOpen()"><i class="fa fa-times" aria-hidden="true"></i></div>
       </ul>
+
 
       <!-- logo  -->
       <a href="/" class="logo">NILORA</a>
 
       <!-- icon buttons  -->
-      <ul>
+
+      <div class="menu-btn" onclick="toggleMenuOpen()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+
+      <ul class="user-links">
         <li>
           <a href=""><i class="fa fa-search"></i></a>
           <a href=""><i class="fa-regular fa-user"></i></a>
